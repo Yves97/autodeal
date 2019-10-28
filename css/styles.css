@@ -630,15 +630,11 @@ figure.effect-ravi:hover p {
 
 @media screen and (max-width:990px){
 
-    header{
-        padding-top:20px;
-    }
-
     .navbar{
         border: 1px solid var(--primary-color) !important;
-        border-radius: 5px;
-        background: rgba(0, 0, 0, 0.808) !important;
+        background: rgba(0, 0, 0, 0.993) !important;
         position: fixed;
+        top:0;
         width: 100%;
         z-index: 9000;
     }
