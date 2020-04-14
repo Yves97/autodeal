@@ -39,21 +39,12 @@ $(document).ready(function(){
     /*<-typed js->*/
     let typed = new Typed('.type',{
         strings: 
-            ['BIENVENUE CHEZ LUXURY AUTO DEAL'
-            ],
-            typeSpeed:200,
-            backSpeed:200,
+            ['BIENVENUE CHEZ LUXURY AUTO DEAL'],
+            typeSpeed:90,
+            backSpeed:false,
+            showCursor: false,
             smartBackspace: true,
             loop:true
-        });
-    let type = new Typed('.type2',{
-        strings: 
-            ['LE MEILLEUR SERVICE EN LIGNE DE VENTE ET EXPOSITION DE VOITURE...'
-                
-            ],
-            typeSpeed:160,
-            backSpeed:160,
-            loop:false,
         });
 });
 

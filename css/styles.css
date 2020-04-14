@@ -82,7 +82,7 @@ hr{
     right: 0;
     bottom: 0;
     background-color: #000;
-    z-index: 99;
+    z-index: 4000;
 }
 
 #status{
@@ -91,10 +91,8 @@ hr{
     position: absolute;
     left: 50%;
     top: 50%;
-    background-image: url('../images/gifs/circle.gif');
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: -100px 0 0 -100px;
+    transform: translate(-50%,-50%);
+    background: url('../images/gifs/circle.gif') center no-repeat;
 }
 
 /****************************** INDEX PAGE ***********************************/
@@ -157,14 +155,13 @@ header{
     top: 150px;
     border: none;
     padding:40px 0;
-    background: #f1f1f11c;
 }
 
-.welcome-msg span{
-    font-size:2rem;
+.welcome-msg h3{
+    font-size:3.5rem;
 }
 
-.welcome-msg span, .welcome-msg h4{
+.welcome-msg h3, .welcome-msg h4{
     color: #fff;
 }
 
@@ -630,13 +627,17 @@ figure.effect-ravi:hover p {
 
 @media screen and (max-width:990px){
 
+    header{
+        padding-top:20px;
+    }
+
     .navbar{
         border: 1px solid var(--primary-color) !important;
-        background: rgba(0, 0, 0, 0.993) !important;
+        border-radius: 5px;
+        background: rgba(0, 0, 0, 0.808) !important;
         position: fixed;
-        top:0;
         width: 100%;
-        z-index: 9000;
+        z-index: 2000;
     }
 
     .navbar-brand p{
@@ -653,6 +654,7 @@ figure.effect-ravi:hover p {
     .slogan-text{
         display: none;
     }
+    
 }
 
 @media screen and (max-width:377px){
@@ -661,6 +663,20 @@ figure.effect-ravi:hover p {
     }
     .slogan-text{
         display: none;
+    }
+    #portofolio,#associate,#slider-cars,#contact{
+        padding: unset;
+    }
+    #portofolio{
+        padding-bottom: 1rem;
+    }
+    #contact{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
+    #slider-cars{
+        margin-bottom: 2rem;
     }
 }
 
@@ -673,5 +689,8 @@ figure.effect-ravi:hover p {
     }
     .navbar-toggler{
         margin: 0;
+    }
+    #portofolio{
+        padding: unset;
     }
 }
